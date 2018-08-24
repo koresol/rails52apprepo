@@ -8,8 +8,8 @@
 # server "db.example.com", user: "deploy", roles: %w{db}
 
 # Replace 127.0.0.1 with your server's IP address!
-server '178.128.155.203', user: 'deploy', roles: %w{app db web}
-
+server '178.128.155.203', port: 4595, user: 'deploy', roles: %w{app db web}
+#set :ssh_options, { forward_agent: true, port: 39456, user: 'deploy' }
 
 
 # role-based syntax
