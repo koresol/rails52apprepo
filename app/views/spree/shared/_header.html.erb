@@ -3,7 +3,10 @@
     <div class="container">
       <div class="row">
         <figure id="" class="col-md-4 col-sm-3">
-          <%= image_tag 'spree_50.png'%>
+          <%#= image_tag 'spree_50.png'%>
+          <%= link_to root_path do %>
+            <%= image_tag "spree_50.png" %>
+          <% end %>
         </figure>
         <%= render partial: 'spree/shared/nav_bar' %>
       </div>
